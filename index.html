@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--第三種用法CSS寫在外面的CSS檔案, CSS3可以不用寫type="text/css"，已經包含了-->
+        <link rel="stylesheet" type="text/css" href="/css/index.css">
+    </head>
+    <body>
+        <!--第一種用法CSS寫在外面 -->
+        <!--使用id時用#，使用class時用.-->
+        <style>
+            h2 {
+                color: darkgreen;
+            }
+            p{
+                color: aquamarine;
+            }
+            #section-1-title {
+                color: blue
+            }
+            #section-2-title {
+                color: red;
+            }
+            .description{
+                color: gray;
+            }
+        </style>
+        
+        <!--第二種用法CSS寫在裡面 -->
+        <h1 style="color: red">進度條CSS 3課程</h1>
+        
+        <!--對所有的P變化顏色-->
+        <section>
+            <p>Section 0</p>
+        </section>
+        
+        <!--可使用ID 分別對P變化顏色-->
+        <section>
+            <p id="section-1-title">Section 1</p>
+            <div class="description">
+                Section 1 description,Section 1 description,
+                Section 1 description,Section 1 description,
+                Section 1 description,Section 1 description,
+            </div>
+        </section>
+        <section>
+            <p id="section-2-title">Section 2</p>
+            <div class="description">
+                Section 2 description,Section 2 description,
+                Section 2 description,Section 2 description,
+                Section 2 description,Section 2 description,
+            </div>
+        </section>
+        <section>
+            <p id="section-3-title">Section 2</p>
+            <div >
+                Section 3 description,Section 3 description,
+                Section 3 description,Section 3 description,
+                Section 3 description,Section 3 description,
+            </div>
+        </section>
+        <hr>
+        <h2 >進度條CSS 3課程</h2>
+        <h3 >進度條CSS 3課程</h3>
+    </body>
+</html>
